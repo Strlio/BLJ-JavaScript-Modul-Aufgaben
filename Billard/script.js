@@ -19,20 +19,21 @@ function drawBall(x, y, radius, color) {
 
 function animate() {
   // Clear the canvas every frame
+  const radius = 50;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   // Draw the ball
-  drawBall(x, y, 50, "blue");
+  drawBall(x, y, radius, "blue");
 
   // Update position
   x += xv;
   y += yv;
 
   // Simple wall bounce logic
-  if (x + 50 > canvas.width || x - 50 < 0) {
+  if (x + radius > canvas.width || x - radius < 0) {
     xv *= -1;
   }
-  if (y + 50 > canvas.height || y - 50 < 0) {
+  if (y + radius > canvas.height || y - radius < 0) {
     yv *= -1;
   }
 
