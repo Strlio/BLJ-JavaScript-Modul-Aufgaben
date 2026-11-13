@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abfahrtstafel - Swiss Transport</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Abfahrtstafel</h1>
+        </header>
+
+        <div class="search-section">
+            <input type="text" id="stationInput" placeholder="Ort oder Haltestelle (z.B. Luzern)" />
+            <input type="text" id="targetStationInput" placeholder="Zielbahnhof (optional)" aria-label="Zielbahnhof (optional)" />
+            <button id="fetchBtn">Abfrage</button>
+        </div>
+
+        <div id="statusMessage"></div>
+
+        <table id="departureTable">
+            <thead>
+                <tr>
+                    <th>Abfahrt</th>
+                    <th>Linie</th>
+                    <th>Betrieb</th>
+                    <th>Ziel</th>
+                    <th>Gleis</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Daten werden hier dynamisch eingefügt -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

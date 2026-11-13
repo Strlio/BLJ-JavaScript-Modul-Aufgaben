@@ -1,0 +1,19 @@
+#container {
+    display: flex;
+}
+
+#container div {
+    margin: 20px;
+}
+
+select {
+    width: 150px;
+    height: 180px;
+}
+
+button {
+    display: block;
+    margin: 10px 0;
+    height: 30px;
+    width: 120px;
+}

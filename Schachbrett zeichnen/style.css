@@ -1,0 +1,22 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(8, 65px);
+    grid-template-rows: repeat(8, 65px);
+    gap: 1px; /* Optional: kleine Linien zwischen den Feldern */
+    margin: 0;
+    padding: 0;
+}
+
+
+.black {
+    background-color: #f86a6a;
+}
+
+.white {
+    background-color: #f0d9b5;
+}
+
+.schachDivs {
+    width: 65px;
+    height: 65px;
+}
